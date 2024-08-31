@@ -1,4 +1,5 @@
-﻿namespace FormulaCuadraticaMVVMQ32024
+﻿using FormulaCuadraticaMVVMQ32024.Views;
+namespace FormulaCuadraticaMVVMQ32024
 {
     public partial class App : Application
     {
@@ -6,7 +7,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new FormulaCuadraticaView());
         }
     }
 }
